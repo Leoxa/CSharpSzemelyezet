@@ -19,5 +19,13 @@ namespace SzamelyzetApp
         {
             return fonok.Keres(nev, szuletes);
         }
+
+        public int Letszam
+        {
+            get
+            {
+                return fonok.Letszam;
+            }
+        }
     }
 }

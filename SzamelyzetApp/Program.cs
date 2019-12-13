@@ -25,6 +25,7 @@ namespace SzamelyzetApp
             Szemely keresett = szemelyzet.Keres("Ben Dover", new DateTime(1982, 3, 2));
             Console.WriteLine(keresett);
             Console.WriteLine(szemelyzet.Letszam);
+            Console.WriteLine(szemelyzet.Listaz);
 
             Console.ReadLine();
         }

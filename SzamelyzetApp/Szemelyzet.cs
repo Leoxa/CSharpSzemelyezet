@@ -27,5 +27,19 @@ namespace SzamelyzetApp
                 return fonok.Letszam;
             }
         }
+        public String Listaz
+        {
+            get
+            {
+                return fonok.Listaz;
+            }
+        }
+        public int BeosztottakSzama
+        {
+            get
+            {
+                return fonok.BeosztottakSzama;
+            }
+        }
     }
 }

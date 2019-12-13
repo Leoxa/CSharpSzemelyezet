@@ -14,21 +14,6 @@ namespace SzamelyzetApp
 
         ISet<Szemely> beosztottak = new SortedSet<Szemely>();
 
-        public int Letszam
-        {
-            get
-            {
-                int letszam = 1;
-
-                foreach (var b in beosztottak)
-                {
-                    letszam += b.Letszam;
-                }
-
-                return letszam;
-            }
-        }
-
         public Szemely(string nev, DateTime szuletes, string beosztas)
         {
             this.nev = nev;
@@ -71,6 +56,49 @@ namespace SzamelyzetApp
         public override string ToString()
         {
             return nev + " " + szuletes + " (" + beosztas +")";
+        }
+
+        public int Letszam
+        {
+            get
+            {
+                int letszam = 1;
+
+                foreach (var b in beosztottak)
+                {
+                    letszam += b.Letszam;
+                }
+
+                return letszam;
+            }
+        }
+
+        public String Listaz
+        {
+            get
+            {
+                string s = this.ToString()+ "\n";
+                foreach (var b in beosztottak)
+                {
+                    s += b.Listaz;
+                }
+                return s;
+            }
+        }
+
+       public int BeosztottakSzama
+        {
+            get
+            {
+                int i = 1;
+                foreach (var b in beosztottak)
+                {
+                    if ()
+                    {
+
+                    }
+                }
+            }
         }
     }
 }
